@@ -24,10 +24,13 @@ h3,
 h4,
 h5,
 h6,
-p,
+p {
+  margin: 0;
+}
+
 ul {
   list-style: none;
-  padding: 0;
+  padding-left: 0;
   margin: 0;
 }
 
@@ -79,6 +82,7 @@ body {
 .header-container {
   align-items: center;
   display: flex;
+  justify-content: space-between;
 }
 
 .header-navigation {
@@ -127,7 +131,6 @@ body {
 }
 
 .contact-list {
-  margin-left: auto;
   display: flex;
 
   font-weight: 500;
@@ -213,6 +216,7 @@ body {
 
 .pecularities-item {
   margin-right: 30px;
+  width: 50%;
 }
 
 .pecularities-item:last-child {
@@ -226,8 +230,7 @@ body {
 }
 
 .text-peculiarities {
-  text-align: justify;
-  line-height: 1.7;
+  line-height: 1.71;
   color: var(--contacts-color);
 }
 
@@ -270,6 +273,11 @@ body {
 .our-team-item {
   text-align: center;
   margin-right: 30px;
+
+  background-color: var(--background-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .our-team-item:last-child {
@@ -296,11 +304,11 @@ body {
 .footer-container {
   display: flex;
   flex-direction: column;
-  padding-top: 60px;
-  padding-bottom: 60px;
 }
 
 .footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: var(--footer-background-color);
 }
 
@@ -432,6 +440,8 @@ body {
 .text-container {
   padding: 20px 24px;
   border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
 }
 
 .portfolio-list-title {
